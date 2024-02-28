@@ -22,18 +22,7 @@ scalingo create my-n8n
 scalingo -a my-n8n addons-add postgresql postgresql-starter-512
 ```
 
-3. Configure n8n to perform store its internal data in PostgreSQL
-
-```
-scalingo -a my-n8n env-set 'DB_POSTGRESDB_DATABASE=xxx'
-scalingo -a my-n8n env-set 'DB_POSTGRESDB_HOST=xxx.postgresql.dbs.scalingo.com'
-scalingo -a my-n8n env-set 'DB_POSTGRESDB_PASSWORD=xxx'
-scalingo -a my-n8n env-set 'DB_POSTGRESDB_PORT=xxx'
-scalingo -a my-n8n env-set 'DB_POSTGRESDB_USER=xxx'
-scalingo -a my-n8n env-set 'DB_TYPE=postgresdb'
-```
-
-4. Add some needed configuration for N8N
+3. Add some needed configuration for N8N
 
 Tell N8N to listen on the port provided by Scalingo.
 ```

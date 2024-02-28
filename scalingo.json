@@ -23,16 +23,6 @@
       "description": "Type of database to use to store N8N configuration",
       "value": "postgresdb",
       "required": true
-    },
-    "N8N_BASIC_AUTH_ACTIVE": {
-      "description": "Should basic auth be activated for editor and Rest API access",
-      "value": "true"
-    },
-    "N8N_BASIC_AUTH_USER": {
-      "description": "The name of the n8n user for basic authentication"
-    },
-    "N8N_BASIC_AUTH_PASSWORD": {
-      "description": "The password of the n8n user for basic authentication"
     }
   },
   "addons": ["postgresql:postgresql-starter-512"]
